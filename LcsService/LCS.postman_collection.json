@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "0f4e478e-90fc-42f7-a8fa-0c09157c6011",
+		"name": "LCS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LCS Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"setOfStrings\": [\r\n          {\"value\": \"comcast\"},\r\n          {\"value\": \"communicate\"}, \r\n          {\"value\": \"commutation\"}\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/lcs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"lcs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LCS No Request Body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/lcs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"lcs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LCS Not All Strings Unique",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"setOfStrings\": [\r\n          {\"value\": \"hello\"},\r\n          {\"value\": \"war\"}, \r\n          {\"value\": \"eagle\"}\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/lcs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"lcs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
