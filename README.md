@@ -8,7 +8,7 @@ Application starts at http://localhost:4200/
 
 LcsService - Java(1.8) Spring Boot(2.5)
 
-Application starts at http://localhost:8081/lcs
+Application starts at 8081 http://localhost:8081/lcs
 
 Junit4 - covered for controller class
 
